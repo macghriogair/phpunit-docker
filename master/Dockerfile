@@ -40,6 +40,7 @@ RUN apk --no-cache add \
         php7-xmlwriter \
         php7-zip \
         php7-zlib \
+        php7-iconv \
         unzip \
     && php -r "copy('https://pear.php.net/go-pear.phar', 'go-pear.phar');" \
     && php go-pear.phar \
