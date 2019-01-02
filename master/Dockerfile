@@ -58,7 +58,7 @@ RUN apk --no-cache add \
 
 ONBUILD RUN \
     { \
-        [ "${PEAR_PACKAGES}" != "foo" ] \
+        [ "${PEAR_PACKAGES}" != "foo" ]; \
     } || exit 0 && pear install ${PEAR_PACKAGES}
 
 VOLUME ["/app"]
